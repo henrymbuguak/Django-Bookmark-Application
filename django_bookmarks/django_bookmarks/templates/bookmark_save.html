@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block external %}
+
+<link rel="stylesheet" href="/site_media/jquery.auto-complete.css" type="text/css">
+<script type="text/javascript" src="/site_media/jquery.auto-complete.js"></script>
+<script type="text/javascript" src="/site_media/jquery.auto-complete.min.js"></script>
+<script type="text/javascript" src="/site_media/tag_autocomplete.js"></script>
+
+{% endblock %}
+{% block title %}Save Bookmarks {% endblock %}
+{% block head %}Save Bookmarks {% endblock %}
+{% block content %}
+
+{% include 'bookmark_save_form.html' %}
+{% endblock %}

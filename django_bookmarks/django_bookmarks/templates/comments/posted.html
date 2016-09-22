@@ -1,0 +1,11 @@
+{% extends "base.htm" %}
+{% block title %} Comment posted successfully{% endblock %}
+{% block head %} Comment posted successfully{% endblock %}
+{% block content %}
+<p>Thank you for contributing.</p>
+{% if object %}
+<p>
+<a href="/bookmark/{{object.id}}/">View your comment</a>
+</p>
+{% endif %}
+{% endblock %}
